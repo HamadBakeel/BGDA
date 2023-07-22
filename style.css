@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "PingAR-LT";
+  src: url("./assets/fonts/ping/PingAR+LT-Regular.otf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PingAR-LT";
+  src: url("./assets/fonts/ping/PingAR+LT-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "PingAR-LT";
+  src: url("./assets/fonts/ping/PingAR+LT-Light.otf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "PingAR-LT";
+  src: url("./assets/fonts/ping/PingAR+LT-Medium.otf");
+  font-weight: 500;
+}
+
+/* Add more @font-face rules for other weights as needed */
+* {
+  --background-gradient: linear-gradient(to left, #784bb7, #f54374);
+}
+
+.text-gradient-custom {
+  @apply bg-gradient-to-l;
+  background-image: var(--background-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body{
+    /* font-family: 'PingAR-LT', sans-serif; */
+    font-weight: medium;
+}
+
+.bg-gradient-custom {
+  @apply bg-gradient-to-l;
+  background-image: var(--background-gradient);
+}
