@@ -30,12 +30,6 @@
   --background-gradient: linear-gradient(to left, #784bb7, #f54374);
 }
 
-.text-gradient-custom {
-  @apply bg-gradient-to-l;
-  background-image: var(--background-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 body{
     /* font-family: 'PingAR-LT', sans-serif; */
