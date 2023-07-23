@@ -37,7 +37,7 @@ body{
 
 .bg-gradient-custom {
   @apply bg-gradient-to-l;
-  background-image: var(--background-gradient);
+  background-image: var(--background-gradient) !important;
 }
 
 .section-title::after{
