@@ -30,7 +30,6 @@
   --background-gradient: linear-gradient(to left, #784bb7, #f54374);
 }
 
-
 body{
     /* font-family: 'PingAR-LT', sans-serif; */
     font-weight: medium;
@@ -38,5 +37,16 @@ body{
 
 .bg-gradient-custom {
   @apply bg-gradient-to-l;
+  background-image: var(--background-gradient);
+}
+
+.section-title::after{
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: 0;
+  width: 45%;
+  height: 3px;
+  border-radius: 3px;
   background-image: var(--background-gradient);
 }
