@@ -50,3 +50,23 @@ body{
   border-radius: 3px;
   background-image: var(--background-gradient);
 }
+
+.swiper-button-prev:after, .swiper-rtl ~ .swiper-button-next:after,
+.swiper-button-next:after, .swiper-rtl ~ .swiper-button-prev:after{
+  color: #444 !important;
+  font-size: 20px;
+}
+.swiper-button-next, .swiper-button-prev{
+  top: 70% !important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 35px !important;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 35px !important;
+}
+.swiper img{
+  margin: auto;
+
+}
+

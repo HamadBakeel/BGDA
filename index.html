@@ -9,6 +9,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.css"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
   </head>
   <body>
     <nav class="bg-white text-sm font-medium">
@@ -303,6 +305,33 @@
       </div>
     </section>
 
+
+        <!-- Testimonials section -->
+        <section class="pt-16 px-20 pb-10 bg-[#E5E7EB] relative">
+          <h2
+            class="text-2xl font-medium text-center mb-10 section-title relative w-fit mx-auto"
+          >
+            شركاء النجاح
+          </h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/images/partner-1.svg" alt=""></div>
+              <div class="swiper-slide"><img src="assets/images/partner-2.svg" alt=""></div>
+              <div class="swiper-slide"><img src="assets/images/partner-3.svg" alt=""></div>
+              <div class="swiper-slide"><img src="assets/images/partner-4.svg" alt=""></div>
+              <div class="swiper-slide"><img src="assets/images/partner-5.svg" alt=""></div>
+              <div class="swiper-slide"><img src="assets/images/partner-2.svg" alt=""></div>
+              <div class="swiper-slide"><img src="assets/images/partner-4.svg" alt=""></div>
+              <div class="swiper-slide"><img src="assets/images/partner-3.svg" alt=""></div>
+              <div class="swiper-slide"><img src="assets/images/partner-5.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          
+        </section>
+
+
     <!-- Download app section -->
     <section
       class="pt-10 pb-12 flex flex-col gap-8 items-center bg-gradient-custom"
@@ -412,5 +441,34 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
   </body>
 </html>
