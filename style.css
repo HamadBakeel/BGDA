@@ -27,7 +27,7 @@
 
 /* Add more @font-face rules for other weights as needed */
 * {
-  --background-gradient: linear-gradient(to left, #784bb7, #f54374);
+  --background-gradient: linear-gradient(to left, #6100bf, #f54374);
 }
 
 body{
@@ -37,7 +37,9 @@ body{
 
 .bg-gradient-custom {
   @apply bg-gradient-to-l;
-  background-image: var(--background-gradient) !important;
+  /* background-image: var(--background-gradient) !important; */
+  background: rgb(245,67,116);
+  background: linear-gradient(163deg, rgba(245,67,116,1) 38%, rgba(97,0,191,0.9360556722689075) 100%);
 }
 
 .section-title::after{
@@ -67,7 +69,10 @@ body{
 }
 .swiper img{
   margin: auto;
+}
 
+.swiper-button-next, .swiper-button-prev {
+  margin-top: calc(-22px - (var(--swiper-navigation-size)/ 2)) !important;
 }
 
 @media (min-width: 768px){
