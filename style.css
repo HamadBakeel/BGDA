@@ -5,6 +5,7 @@
 
 * {
   --background-gradient: linear-gradient(to left, #6100bf, #f54374);
+  scroll-behavior: smooth
 }
 
 body{
