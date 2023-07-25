@@ -2,37 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "PingAR-LT";
-  src: url("./assets/fonts/ping/PingAR+LT-Regular.otf");
-  font-weight: normal;
-}
 
-@font-face {
-  font-family: "PingAR-LT";
-  src: url("./assets/fonts/ping/PingAR+LT-Bold.otf");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "PingAR-LT";
-  src: url("./assets/fonts/ping/PingAR+LT-Light.otf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: "PingAR-LT";
-  src: url("./assets/fonts/ping/PingAR+LT-Medium.otf");
-  font-weight: 500;
-}
-
-/* Add more @font-face rules for other weights as needed */
 * {
   --background-gradient: linear-gradient(to left, #6100bf, #f54374);
 }
 
 body{
-    /* font-family: 'PingAR-LT', sans-serif; */
-    font-weight: medium;
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
 }
 
 .bg-gradient-custom {
